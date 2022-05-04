@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Merriweather', serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 576px) {
     .display-small {
         font-family: 'Merriweather', serif;
@@ -32,6 +36,12 @@ h1, h2, h3, h4, h5 {
         font-family: 'Merriweather', serif;
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .label {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .body {
@@ -66,6 +76,12 @@ h1, h2, h3, h4, h5 {
         font-family: 'Merriweather', serif;
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .label {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
     }
     
     .body {
@@ -118,22 +134,10 @@ h1, h2, h3, h4, h5 {
     line-height: 20px;
 }
 
-.label-l {
+.label {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 24px;
-}
-
-.label-m {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.label-s {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 16px;
 }
 
 .body {
@@ -143,19 +147,124 @@ h1, h2, h3, h4, h5 {
 }
 
 
+/*=================================================================
+Utility Classes
+==================================================================*/
 
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem)
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.two-dp-shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
+    
+}
 
 /*=================================================================
   Navigation
 ==================================================================*/
+#logo {
+    margin: 2rem;
+}
 
+#logo img {
+    width: 150px;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+
+}
 
 /*=================================================================
   Footer
 ==================================================================*/
 
 /*=================================================================
-  Containers
+  Color styles
 ==================================================================*/
 
+.primary {
+   background-color: #125092; 
+}
+
+.on-primary {
+    color: #FBFEFF;
+}
+
+.primary-container {
+    background-color: #D3E5FF;
+}
+
+.on-primary-continer {
+    color: #0A2C52;
+}
+
+.secondary{
+    background-color: #E77817;
+}
+
+.on-secondary {
+    color: #FFF6EE;    
+}
+
+.sec-container {
+    color: #FCD4B1;
+}
+.sec-container-bg {
+    background-color: #FCD4B1;
+}
+.error {
+   color: #DA251D; 
+}
+
+.on-error{
+    color: #FFFBFB;
+}
+
+.error-contianer {
+    background-color: #FFD3D3;
+}
+
+.on-error-container {
+    color: #490000;
+}
+
+.primary-light {
+    color:#1B79DE
+}
+
+.primary-light-bg {
+    background-color:#1B79DE;
+}
+
+.primary-dull {
+    color:#13569E;
+}
+
+.primary-dull-bg {
+    background-color:#13569E;
+}
 
