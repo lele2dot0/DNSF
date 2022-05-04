@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Merriweather', serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -168,9 +172,17 @@ Utility Classes
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-button {
-    
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
+
 
 /*=================================================================
   Navigation
@@ -188,15 +200,66 @@ button {
     justify-content: space-between;
 }
 
+.primary-header a {
+    color:#0A2C52;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
 .nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.nav-list li {
+@media (max-width: 35em){
+    #primary-navigation {
+        --gap: 2em;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
 
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+        background: hsl(0 0% 100% / 1);
+
+        transform: translateX(100%);
+        transition: transform 450ms ease-out;
+    }
+
+    #primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle {
+        position: absolute;
+        display: block;
+        z-index: 9999;
+        background: url("../img/hamburger-menu.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 2rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background: url("../img/close.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
+
+@supports (backdrop-filter: blur(1rem)) {
+    #primary-navigation {
+        background: hsl(0 0% 100% /0.1);
+        backdrop-filter: blur(.5rem);
+    }
+}
+
 
 /*=================================================================
   Footer

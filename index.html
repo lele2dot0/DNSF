@@ -13,24 +13,29 @@
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/home.css">
+        <!--JS-->
+        <script src="assets/js/nav.js" defer></script>
     </head>
     <body>
         <main>
-            <header>
-                <div class="logo"></div>
+            <header id="primary-header"  class="primary-header flex">
+                <div id="logo"><a href="index.html"><img src="assets/img/logo.png" /></a></div>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                </button>
                 <nav> 
-                    <ul class="nav-list">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About></a></li>
-                        <li><a href="">Team</a></li>
-                        <li><a href="">Announcements</a></li>
-                        <li><a href="">Contact</a></li>
+                    <ul id="primary-navigation"  data-visible ="false" class="nav-list flex label bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="new.html">Announcements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <section id = "hero">
                 <h2>Find A Way</h2>    
-                <h1>or <u>MAKE</u> one</h1>
+                <h1>or <span class="underline bold">MAKE</span> one</h1>
             </section>
             <section id ="motto">
                 <article>
@@ -97,17 +102,17 @@
             </section>
         </main>
         <footer>
-            <nav>
-                <ul>
+            <nav class="flex">
+                <ul class="nav-list label">
                     <li><a href="">Home</a></li>
-                    <li><a href="">About></a></li>
+                    <li><a href="">About</a></li>
                     <li><a href="">Team</a></li>
                     <li><a href="">Announcements</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <nav id="social">
-                <ul>
+            <nav id="social" class="flex">
+                <ul class="nav-list">
                     <li><a><img src=""></a></li>
                     <li><a><img src=""></a></li>
                     <li><a><img src=""></a></li>
