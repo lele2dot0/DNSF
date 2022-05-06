@@ -1,0 +1,159 @@
+
+
+/*=================================================================
+  Hero Section
+==================================================================*/
+
+#hero {
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    padding: 15em 0;
+
+}
+
+@media (min-width: 40em) {
+    #hero {
+        background-image: url(../img/hero.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        padding: 15em 0;
+    
+    }
+}
+
+
+
+
+/*=================================================================
+  Motto Section
+==================================================================*/
+
+
+
+
+
+/*=================================================================
+  Pillars Section (Sport & Education)
+==================================================================*/
+
+.card {
+    padding: 5.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 2em ;
+}
+
+@media (min-width: 80em){
+    .card{
+        padding: 7.5rem 7rem;
+        margin-bottom: 0;
+    }
+
+    #sport {
+        margin-left: 2em;
+    }
+}
+
+@media (min-width: 1021px) and (max-width: 1200px) {
+    .card {
+
+        padding: 5rem 3rem;
+    }
+}
+
+@media (min-width: 1021px) and (max-width: 1200px) {
+    .card {
+
+        padding: 5rem 3rem;
+    }
+}
+
+#education {
+    background: linear-gradient(to top, rgb(10, 44, 82,1.70), rgb(10, 44, 82,.51)),url(../img/education.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#sport {
+    background: linear-gradient(to top, rgb(10, 44, 82,1.70), rgb(10, 44, 82,.51)),url(../img/sport.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+
+/*=================================================================
+  Motivation
+==================================================================*/
+#motivation {
+    border-radius: 8px;
+}
+
+#motivation img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 0 0 8px;
+}
+
+.motivation-right {
+    padding: 2em 1em;
+    border-radius: 0 8px 8px 0;
+}
+
+#motivation h2{
+    margin-bottom: 1em;
+}
+
+#motivation a:hover {
+    background-color: #FCD4B1;
+    color: #CA5E00;
+}
+
+.split--join p {
+    margin-bottom: 2em;
+}
+
+@media (max-width: 40em) {
+    #motivation img {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .motivation-right {
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+/*=================================================================
+  Announcements
+==================================================================*/
+
+
+.news {
+    display: flex;
+    gap: 1em;
+}
+
+.news > * {
+    flex-basis: 100%;
+}
+
+.news p {
+    padding: 5px;
+}
+
+#announcements article {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+@media(max-width:40em) {
+    .news {
+        flex-direction: column;
+    }
+}

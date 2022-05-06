@@ -18,108 +18,127 @@
     </head>
     <body>
         <main>
-            <header id="primary-header"  class="primary-header flex">
-                <div id="logo"><a href="index.html"><img src="assets/img/logo.png" /></a></div>
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                    <span class="sr-only">Menu</span>
-                </button>
-                <nav> 
-                    <ul id="primary-navigation"  data-visible ="false" class="nav-list flex label bold">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="new.html">Announcements</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <header id="primary-header"  class="">
+                <div class="container primary-header flex">
+                    <div id="logo"><a href="index.html"><img src="assets/img/logo.png" /></a></div>
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <nav>
+                        <ul id="primary-navigation"  data-visible ="false" class="nav-list flex label bold">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="new.html">Announcements</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
             <section id = "hero">
-                <h2>Find A Way</h2>    
-                <h1>or <span class="underline bold">MAKE</span> one</h1>
+                <div class="container">
+                    <h2 class="headline-m on-primary">Find A Way</h2>
+                    <h1 class="headline-l on-primary">or <span class="underline bold">MAKE</span> one</h1>
+                </div>
             </section>
-            <section id ="motto">
-                <article>
-                    <h2>…aut inveniam viam aut faciam</h2>
-                    <p>
-                        Our motto is at the core of our values and beliefs.
-                         Through sport and education we help build upright future
-                          leaders who can weather storms and create opportunities.
-                    </p>
-                </article>
+            <section id ="motto" class="flex text-center">
+                <div class="container">
+                    <article class="">
+                        <h2 class="headline-l light">…aut inveniam viam aut faciam</h2>
+                        <p class="label">
+                            Our motto is at the core of our values and beliefs.
+                             Through sport and education we help build upright future
+                              leaders who can weather storms and create opportunities.
+                        </p>
+                    </article>
+                </div>
             </section>
             <section id="pillars">
-                <article id="education" class="card">
-                    <h3>Education</h3>
-                    <p>
-                        With the belief that a good and successful sports person must have a solid educational background,
-                         the Foundation also supports education as well
-                    </p>
-                    <p>Dan Ngerem | Founder & President</p>
-                </article>
-                <article id="sport" class="card">
-                    <h3>Sport</h3>
-                    <p>
-                        With the belief that a good and successful sports person must have a solid educational background,
-                         the Foundation also supports education as well
-                    </p>
-                    <p>Dan Ngerem | Founder & President</p>
-                </article>
+                <div class="container">
+                    <div class="split">
+                        <article id="education" class="card on-primary">
+                            <h3 class="headline-m">Education</h3>
+                            <p>
+                                With the belief that a good and successful sports person must have a solid educational background,
+                                 the Foundation also supports education as well
+                            </p>
+                            <p>Dan Ngerem | Founder & President</p>
+                        </article>
+                        <article id="sport" class="card on-primary">
+                            <h3 class="headline-m">Sport</h3>
+                            <p class="body">
+                                With the belief that a good and successful sports person must have a solid educational background,
+                                 the Foundation also supports education as well
+                            </p>
+                            <p>Dan Ngerem | Founder & President</p>
+                        </article>
+                    </div>
+                </div>
             </section>
             <section id ="cta">
-                <article>
-                    <picture></picture>
-                    <div>
-                        <h4>
-                            Understand our Motivation
-                        </h4>
-                        <p>
-                            The Dan Ngerem Sports Foundation is a privately motivated NGO with a selfless commitment to serve by creating enablement for the fulfilment of dreams especially in school age children and particularly in sports 
-                        </p>
-                        <p>
-                            We do this by donating sports equipment & educational items as well as the outright sponsorship of deserving students. We will always be there to lend a hand of support. 
-                        </p>
-                        <span class="button"><p>Get Involved</p></span>
-                    </div>
-                </article>
+                <div class="container">
+                    <article >
+                        <div id="motivation" class="split split--join">
+                            <div class="image"><img src="assets/img/goal-net.png"></div>
+                            <div class="motivation-right on-primary-container">
+                                <h4 class="headline-s on-primary">
+                                    Understand our Motivation
+                                </h4>
+                                <h2 class="headline-m on-primary">About Us</h2>
+                                <p class="on-primary">
+                                    The Dan Ngerem Sports Foundation is a privately motivated NGO with a selfless commitment to serve by creating enablement for the fulfilment of dreams especially in school age children and particularly in sports
+                                </p>
+                                <p class="on-primary">
+                                    We do this by donating sports equipment & educational items as well as the outright sponsorship of deserving students. We will always be there to lend a hand of support.
+                                </p>
+                                <a href="#" class="button secondary on-secondary">Get Involved</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
-            <section id = "announcements">
-                <h2></h2>
-                <article>
-                    <picture></picture>
-                    <h3></h3>
-                    <p></p>
-                </article>
-                <article>
-                    <picture></picture>
-                    <h3></h3>
-                    <p></p>
-                </article>
-                <article>
-                    <picture></picture>
-                    <h3></h3>
-                    <p></p>
-                </article>
+            <section id = "announcements" class="on-primary-container">
+                <h2 class="headline-l primary-container-text text-center">Announcements</h2>
+                <div class="container news">
+                    <article>
+                        <img src="assets/img/ann-1.png">
+                        <p class="label">Title</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odit obcaecati quasi repellendus culpa impedit?</p>
+                    </article>
+                    <article>
+                        <img src="assets/img/ann-2.png">
+                        <p class="label">Title</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quas fuga, dolores nemo veniam architecto.</p>
+                    </article>
+                    <article>
+                        <img src="assets/img/ann-3.png">
+                        <p class="label">Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ipsa rem fugit eaque aspernatur totam!</p>
+                    </article>
+                </div>
             </section>
         </main>
-        <footer>
-            <nav class="flex">
-                <ul class="nav-list label">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Announcements</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <nav id="social" class="flex">
-                <ul class="nav-list">
-                    <li><a><img src=""></a></li>
-                    <li><a><img src=""></a></li>
-                    <li><a><img src=""></a></li>
-                    <li><a><img src=""></a></li>
-                </ul>
-            </nav>
-            <p>2022 Dan Ngerem Foundation. All Rights Reserved</p>
+        <footer class="on-primary-container">
+            <div class="container">
+                <nav>
+                    <ul class="nav-list label">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Announcements</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav id="social" class="flex">
+                    <ul class="nav-list">
+                        <li><a href=""><img src="assets/img/facebook.svg"></a></li>
+                        <li><a href=""><img src="assets/img/twitter.svg"></a></li>
+                        <li><a href=""><img src="assets/img/instagram.svg"></a></li>
+                        <li><a href=""><img src="assets/img/ytube.svg"></a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">&copy; 2022 Dan Ngerem Foundation. All Rights Reserved</p>
+            </div>
         </footer>
 
     </body>

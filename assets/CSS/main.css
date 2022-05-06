@@ -5,8 +5,30 @@ body, a, p {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+@media screen and (max-width: 576px) {
+    p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Merriweather', serif;
+    margin-bottom: 1em;
 }
 
 body{
@@ -17,84 +39,6 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 576px) {
-    .display-small {
-        font-family: 'Merriweather', serif;
-        font-size: 36px;
-        line-height: 44px;
-    }
-
-    .headline-l {
-        font-family: 'Merriweather', serif;
-        font-size: 32px;
-        line-height: 40px;
-    }
-    
-    .headline-m {
-        font-family: 'Merriweather', serif;
-        font-size: 28px;
-        line-height: 36px;
-    }
-    
-    .headline-s {
-        font-family: 'Merriweather', serif;
-        font-size: 24px;
-        line-height: 32px;
-    }
-
-    .label {
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    .body {
-        font-family: 'Lato', sans-serif;
-        font-size: 12px;
-        line-height: 16px;
-    }
-    
-    
-}
-
-@media screen and (max-width: 768px) {
-    .display-small {
-        font-family: 'Merriweather', serif;
-        font-size: 45px;
-        line-height: 52px;
-    }
-
-    .headline-l {
-        font-family: 'Merriweather', serif;
-        font-size: 36px;
-        line-height: 44px;
-    }
-    
-    .headline-m {
-        font-family: 'Merriweather', serif;
-        font-size: 32px;
-        line-height: 40px;
-    }
-    
-    .headline-s {
-        font-family: 'Merriweather', serif;
-        font-size: 24px;
-        line-height: 32px;
-    }
-
-    .label {
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        line-height: 20px;
-    }
-    
-    .body {
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    
-}
 
 .display-small {
     font-family: 'Merriweather', serif;
@@ -144,10 +88,70 @@ a {
     line-height: 24px;
 }
 
-.body {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+@media screen and (max-width: 768px) {
+    .display-small {
+        font-family: 'Merriweather', serif;
+        font-size: 45px;
+        line-height: 52px;
+    }
+
+    .headline-l {
+        font-family: 'Merriweather', serif;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .headline-m {
+        font-family: 'Merriweather', serif;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .headline-s {
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .label {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .display-small {
+        font-family: 'Merriweather', serif;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .headline-l {
+        font-family: 'Merriweather', serif;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .headline-m {
+        font-family: 'Merriweather', serif;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .headline-s {
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .label {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+    }   
+    
 }
 
 
@@ -160,12 +164,63 @@ Utility Classes
     gap: var(--gap, 1rem)
 }
 
+.flex-center {
+    align-items: center;
+}
+
+
+.container{
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width: 34rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.split--join {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em){
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split * + * {
+        margin-left: 2em;
+    }
+
+    .split--join * + * {
+        margin: 0%;
+    }
+}
+
+
+.text-center {
+    text-align: center;
+}
+
 .underline{
     text-decoration: underline;
 }
 
 .bold {
     font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
 }
 
 .two-dp-shadow {
@@ -183,12 +238,20 @@ Utility Classes
     border: 0;
 }
 
+.button {
+    width: 130px;
+    height: 40px;
+    padding: 11px 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
 
 /*=================================================================
   Navigation
 ==================================================================*/
 #logo {
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 #logo img {
@@ -264,7 +327,29 @@ Utility Classes
 /*=================================================================
   Footer
 ==================================================================*/
+footer, footer a {
+    color: #FFFFFF;
+}
 
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#social{
+    padding: 1em 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
 /*=================================================================
   Color styles
 ==================================================================*/
@@ -281,8 +366,12 @@ Utility Classes
     background-color: #D3E5FF;
 }
 
+.primary-container-text {
+    color: #D3E5FF;
+}
+
 .on-primary-container {
-    color: #0A2C52;
+    background-color: #0A2C52;
 }
 
 .secondary{
@@ -298,6 +387,9 @@ Utility Classes
 }
 .sec-container-bg {
     background-color: #FCD4B1;
+}
+.on-sec-container {
+    color: #CA5E00;
 }
 .error {
    color: #DA251D; 
@@ -330,4 +422,23 @@ Utility Classes
 .primary-dull-bg {
     background-color:#13569E;
 }
+
+/*=================================================================
+  Element Tags
+==================================================================*/
+section {
+    padding: 3rem 0;
+}
+
+@media (max-width:40em) {
+    section{
+        padding: 1em 0;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+
 
