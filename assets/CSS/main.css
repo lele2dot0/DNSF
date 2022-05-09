@@ -175,7 +175,13 @@ Utility Classes
 }
 
 .container--narrow {
-    max-width: 34rem;
+    max-width: 66%;
+}
+
+@media (max-width: 40em){
+    .container--narrow{
+        max-width: 90%;
+    }
 }
 
 .split {
@@ -246,16 +252,24 @@ Utility Classes
     border-radius: 24px;
 }
 
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 
 /*=================================================================
   Navigation
 ==================================================================*/
 #logo {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 #logo img {
-    width: 150px;
+    width: 280px;
 }
 
 .primary-header {
@@ -313,6 +327,7 @@ Utility Classes
         background: url("../img/close.svg");
         background-position: center;
         background-repeat: no-repeat;
+        position:fixed;
     }
 }
 
@@ -327,6 +342,10 @@ Utility Classes
 /*=================================================================
   Footer
 ==================================================================*/
+footer {
+    padding: 3em 0;
+}
+
 footer, footer a {
     color: #FFFFFF;
 }
@@ -372,6 +391,10 @@ footer .nav-list {
 
 .on-primary-container {
     background-color: #0A2C52;
+}
+
+.on-primary-container-text {
+    color: #0A2C52;
 }
 
 .secondary{
