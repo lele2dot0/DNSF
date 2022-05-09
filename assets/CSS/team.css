@@ -6,6 +6,34 @@
     background-size: cover;
 }
 
+/*=================================================================
+    Mission
+==================================================================*/
+#mission{
+    background-color: #D3E5FF;
+}
+
+
+.mission{
+    justify-content: center;
+    background-color:#FBFEFF;
+    padding: 4em;
+    border-radius: 8px;
+}
+
+article.mission div {
+    flex-basis: 100%;
+}
+
+@media(max-width:40em){
+
+    .mission{
+        flex-direction: column-reverse;
+        padding:1em;
+    }
+}
+
+
 
 /*=================================================================
   What we do
@@ -110,17 +138,30 @@
 ==================================================================*/
 #team-blurbs {
     justify-content: center;
+    background-color: #D3E5FF;
 }
 
 .team-profiles {
     display: flex;
     flex-direction: column;
+    background-color: #FBFEFF ;
+    border-radius: 8px;
+    padding: 4em;
+    gap: 4em;
+    justify-content: center;
+}
+
+@media(max-width:40em){
+    .team-profiles {
+        padding: 1em;
+    }
 }
 
 .profile {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
+    
 }
 
 .profile-content{
