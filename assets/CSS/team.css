@@ -4,6 +4,7 @@
 #about-header {
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 7rem;
 }
 
 /*=================================================================
@@ -96,7 +97,8 @@ article.mission div {
 .flip-card-inner {
     position: absolute;
     width: 100%;
-    height: 120%;
+    aspect-ratio: 1/1;
+    /* height: 120%; */
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -111,7 +113,8 @@ article.mission div {
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1 /1;
+    /* height: 100%; */
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
@@ -131,6 +134,25 @@ article.mission div {
     padding: 5%;
 }
 
+.youtube {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 2em;
+    margin-left:0;
+    margin-right: 0;
+
+}
+
+#youtube{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+@media (max-width:40em){
+    #youtube{
+        grid-template-columns: 5% 90% 5%;
+    }
+}
 
 
 /*=================================================================

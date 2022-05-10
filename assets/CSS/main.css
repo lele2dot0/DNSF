@@ -329,6 +329,7 @@ Utility Classes
         background-repeat: no-repeat;
         position:fixed;
     }
+    
 }
 
 @supports (backdrop-filter: blur(1rem)) {
