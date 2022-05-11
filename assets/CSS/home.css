@@ -94,6 +94,7 @@
 
 #motivation img {
     max-width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 8px 0 0 8px;
@@ -120,6 +121,7 @@
 @media (max-width: 40em) {
     #motivation img {
         border-radius: 8px 8px 0 0;
+        height: auto;
     }
     
     .motivation-right {
