@@ -41,6 +41,13 @@
     border-radius: 8px 0 0 8px;
 }
 
+@media (max-width:40em) {
+    #contact-info{
+        border-radius: 8px 8px 0 0;
+    }
+    
+}
+
 .contact-row {
     display:flex;
     flex-basis: 100%;
@@ -88,6 +95,12 @@
     padding: 2em;
     background-color: #FBFEFF;
     border-radius: 0 8px 8px 0;
+}
+
+@media (max-width: 40em) {
+    #contact-form {
+        border-radius: 0 0 8px 8px;
+    }
 }
 
 #contact-fields{
