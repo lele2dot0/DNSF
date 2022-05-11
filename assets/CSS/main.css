@@ -168,6 +168,10 @@ Utility Classes
     align-items: center;
 }
 
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
 
 .container{
     margin-inline: auto;
@@ -176,6 +180,10 @@ Utility Classes
 
 .container--narrow {
     max-width: 66%;
+}
+
+.container--wide{
+    width: min(90%, 80.5rem);
 }
 
 @media (max-width: 40em){
@@ -231,6 +239,10 @@ Utility Classes
 
 .two-dp-shadow {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nine-dp-shadow {
+    box-shadow: 0px 9px 18px 1px rgba(0, 0, 0, 0.21);
 }
 
 .sr-only {

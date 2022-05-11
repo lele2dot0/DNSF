@@ -13,7 +13,7 @@
         <!--Style Sheets-->
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/team.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
         <!--JS-->
         <script src="assets/js/nav.js" defer></script>
 </head>
@@ -29,22 +29,97 @@
                     <ul id="primary-navigation"  data-visible ="false" class="nav-list flex label bold">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="team.html">Team</a></li>
+                        <li><a href="about.html#team">Team</a></li>
                         <li><a href="new.html">Announcements</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section id="contact-header" style="background-image: url(/assets/img/contact-header.png);">
+        <section id="contact-header" style="background: linear-gradient(rgb(10, 44, 82,.50), rgb(10, 44, 82,.50)),url(assets/img/contact.png) center no-repeat;">
             <div class="container">
                 <h2 class="on-primary headline-l bold text-center">
-                    About Us
+                    Contact Us
                 </h2>
                 <p class="title-l on-primary text-center">
-                    …aut inveniam viam aut faciam
+                    You can find us in Victoria Island, Lagos. Send a message on social media. Give us a call. E-mail us or write a letter. We look forward to hearing from you.
                 </p>
             </div>
+        </section>
+        <section id="contact" class="container container--wide">
+            <article class="contact nine-dp-shadow">
+                <div id="contact-info" class="primary-light-bg">
+                    <h2 class="headline-m primary-container-text">Get in touch with us</h2>
+                    <p class="label">Fill the form ahead or feel free to contact us using the methods below.</p>
+                    <div class="contact-row">
+                        <div class="contact-item">
+                            <img src="assets/img/contact-phone.svg"/>
+                            <div class="contact-text">
+                                <p class="title-m">Phone Us</p>
+                                <p class="title-m">+234(0)8037176661</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="assets/img/contact-email.svg"/>
+                            <div class="contact-text">
+                                <p class="title-m">Email Us</p>
+                                <p class="title-m">info@dnsfoundation.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="assets/img/contact-address.svg"/>
+                        <div class="contact-text">
+                            <p class="title-m">Address</p>
+                            <p class="title-m">32 Balarabe Musa Crescent, Victoria Island, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="social-contacts">
+                        <a>
+                            <img src="assets/img/contact-facebook.svg" alt="" class="social-icon">
+                        </a>
+                        <a>
+                            <img src="assets/img/contact-twitter.svg" alt="" class="social-icon">
+                        </a>
+                        <a>
+                            <img src="assets/img/contact-instagram.svg" alt="" class="social-icon">
+                        </a>
+                        <a>
+                            <img src="assets/img/contact-youtube.svg" alt="" class="social-icon">
+                    </a>
+                    </div>
+                </div>
+                <div id="contact-form">
+                    <h4 class="title-l">Send us a message</h4>
+                    <form action="" id="contact-fields">
+                        <div class="contact-input">
+                            <input type="text" name="name" id="name" placeholder="Full Name">
+                        </div>
+                        <div class="contact-input">
+                            <input type="text" name="organisation" id="organisation" placeholder="Organisation (optional)">
+                        </div>
+                        <div class="contact-input">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="contact-input">
+                            <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="contact-input grid-col-span-2">
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="contact-input grid-col-span-2">
+                            <textarea name="message" id="message" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label for="norobo">
+                                <input type="checkbox" name="norobo" id="norobo">
+                                I am not a robot
+                            </label>
+                        </div>
+                        <div><input type="submit" value="Get in touch" class="button"></div>
+                    </form>
+                </div>
+            </article>
         </section>
     </main>
     <footer class="on-primary-container">
